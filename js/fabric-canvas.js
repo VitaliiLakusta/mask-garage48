@@ -25,32 +25,6 @@ var gUserImgUrl = './img/pug.jpg';
   img.left=0;
   canvas.add(img);
 
-
-
-    document.getElementById('img-width').onchange = function() {
-      img.scaleToWidth(parseInt(this.value, 10));
-      canvas.renderAll();
-    };
-    document.getElementById('img-angle').onchange = function() {
-      img.setAngle(this.value);
-      canvas.renderAll();
-    };
-    document.getElementById('img-padding').onchange = function() {
-      padding = parseInt(this.value, 10);
-      canvas.renderAll();
-    };
-    document.getElementById('img-offset-x').onchange = function() {
-      pattern.offsetX = parseInt(this.value, 10);
-      canvas.renderAll();
-    };
-    document.getElementById('img-offset-y').onchange = function() {
-      pattern.offsetY = parseInt(this.value, 10);
-      canvas.renderAll();
-    };
-    document.getElementById('img-repeat').onclick = function() {
-      pattern.repeat = this.checked ? 'repeat' : 'no-repeat';
-      canvas.renderAll();
-    };
   });
   
 })();
